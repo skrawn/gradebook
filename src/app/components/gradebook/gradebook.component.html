@@ -5,7 +5,7 @@
         <th>First Name</th>
         <th>Last Name</th>
         <th>Grade</th>
-        <th *ngFor="let assignment of gradebook.assignments">{{assignment}}</th>
+        <th *ngFor="let assignment of gradebook.assignments">{{assignment.name}}</th>
       </tr>
     </thead>
     <tbody>
@@ -22,6 +22,30 @@
         <td *ngFor="let assignment of student.assignments">
           {{assignment.grade}}
         </td>
+      </tr>
+      <tr></tr>
+      <tr id="summary-row">
+        <td>
+          Minimum
+        <td>
+        <td></td>
+        <td *ngFor="let minimum of gradebook.assignments">{{minimum.minGrade}}</td>
+      </tr>
+      <tr>
+        <td>
+          Maximum
+        </td>
+        <td></td>
+        <td></td>
+        <td *ngFor="let maximum of gradebook.assignments">{{maximum.maxGrade}}</td>
+      </tr>
+      <tr>
+        <td>
+          Average
+        </td>
+        <td></td>
+        <td></td>
+        <td *ngFor="let average of gradebook.assignments">{{average.avgGrade}}</td>
       </tr>
     </tbody>
   </table>
