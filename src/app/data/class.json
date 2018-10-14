@@ -1,0 +1,42 @@
+{
+    "files": [
+        {
+            "name": "CS 101",
+            "assignments": [
+                "Homework 1",
+                "Homework 2",
+                "Test 1",
+                "Test 2"
+            ],
+            "students": [
+                {
+                    "firstName": "Bill",
+                    "lastName": "Paxton",
+                    "assignments": [
+                        {
+                            "name": "Homework 1",
+                            "grade": "96"
+                        }, {
+                            "name": "Test 1",
+                            "grade": "84"
+                        }
+                    ],
+                    "grade": "0"
+                }, {
+                    "firstName": "Ferdinand",
+                    "lastName": "the Rooster",
+                    "assignments": [
+                        {
+                            "name": "Homework 1",
+                            "grade": "68"
+                        }, {
+                            "name": "Test 1",
+                            "grade": "76"
+                        }
+                    ],
+                    "grade": "0"
+                }
+            ]
+        }
+    ]
+}

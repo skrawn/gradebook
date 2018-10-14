@@ -1,18 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GradebookComponent } from './components/gradebook/gradebook.component';
+
+import { GradebookService } from './services/gradebook.service';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GradebookComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    HttpClientModule
+    //FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    GradebookService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

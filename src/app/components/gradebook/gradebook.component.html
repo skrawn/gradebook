@@ -1,0 +1,28 @@
+<div *ngIf="gradebook?.assignments && gradebook.assignments.length > 0">
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Grade</th>
+        <th *ngFor="let assignment of gradebook.assignments">{{assignment}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of gradebook.students">
+        <td>
+          {{student.firstName}}
+        </td>
+        <td>
+          {{student.lastName}}
+        </td>
+        <td>
+          {{student.grade}}
+        </td>
+        <td *ngFor="let assignment of student.assignments">
+          {{assignment.grade}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
