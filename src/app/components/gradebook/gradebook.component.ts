@@ -16,7 +16,6 @@ export class GradebookComponent implements OnInit {
   constructor(private grades: GradebookService) { }
 
   classInfo: Class;
-  students: Student[];
   gradebook: Gradebook;
 
   ngOnInit() {
